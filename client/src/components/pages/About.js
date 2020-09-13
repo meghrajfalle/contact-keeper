@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <h1 style={{ textAlign: 'center' }}>About this WebApp</h1>
-      <div className='card'>
+      <div className='cardAbout'>
         <p>
           <strong>Purpose:</strong> This is a full stack React App for keeping
           contacts. It has Node.js app at backend.
@@ -25,7 +25,7 @@ const About = () => {
       <h2 style={{ textAlign: 'center' }}>Brief info about Developer</h2>
       <div className='row'>
         <div className='column'>
-          <div className='card'>
+          <div className='cardAbout'>
             <img
               src={image}
               alt='Meghraj'
@@ -49,7 +49,8 @@ const About = () => {
                 practice is the key to gain the expertise.
               </p>
               <p style={{ textAlign: 'center' }}>
-                For any queries email me at meghrajfalle@gmail.com
+                <div className='fas fa-envelope-open'> </div> For any queries
+                mail me on id <strong>meghrajfalle@gmail.com</strong>
               </p>
               <br></br>
               <p style={{ textAlign: 'center' }}>
