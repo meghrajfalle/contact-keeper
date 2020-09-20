@@ -1,10 +1,20 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import AlertContext from '../../context/alert/alertContext';
+import AuthContext from '../../context/auth/authContext';
 
 export const Register = () => {
   const alertContext = useContext(AlertContext);
+  const authContext = useContext(AuthContext);
 
   const { setAlert } = alertContext;
+  const { register, error, clearErrors } = authContext;
+
+  useEffect(() => {
+    if (error === 'User already exists') {
+      setAlert(error, 'danger');
+      clearErrors(); // clear error from state once it is shown
+    }
+  }, [error]);
 
   const [user, setUser] = useState({
     name: '',
@@ -16,7 +26,7 @@ export const Register = () => {
   const { name, email, password, password2 } = user;
 
   const onChange = e =>
-    setUser({ ...user, [event.target.name]: [event.target.value] });
+    setUser({ ...user, [event.target.name]: event.target.value });
 
   const onSubmit = e => {
     e.preventDefault();
@@ -25,7 +35,11 @@ export const Register = () => {
     } else if (password !== password2) {
       setAlert('Passwords donot match', 'danger');
     } else {
-      console.log('User Registered ');
+      register({
+        name,
+        email,
+        password
+      });
     }
   };
 
@@ -68,7 +82,7 @@ export const Register = () => {
           />
         </div>
         <div className='form-group'>
-          <label htmlFor='name'>Confirm Password</label>
+          <label htmlFor='password2'>Confirm Password</label>
           <input
             type='password'
             name='password2'
