@@ -1,5 +1,3 @@
-import React, { useReducer } from 'react';
-import AuthContext from '../../context/auth/authContext';
 import {
   REGISTER_SUCCESS,
   REGISTER_FAIL,
