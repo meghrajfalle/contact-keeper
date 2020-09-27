@@ -7,6 +7,7 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Alerts from './components/layout/Alerts';
 import PrivateRoute from './components/routing/PrivateRoute';
+import Logout from './components/auth/Logout';
 
 import ContactState from './context/contact/ContactState';
 import AuthState from './context/auth/AuthState';
@@ -33,6 +34,7 @@ const App = () => {
                   <Route exact path='/about' component={About} />
                   <Route exact path='/register' component={Register} />
                   <Route exact path='/login' component={Login} />
+                  <Route exact path='/logout' component={Logout} />
                 </Switch>
               </div>
             </Fragment>

@@ -6,9 +6,9 @@ import {
   CLEAR_CURRENT,
   UPDATE_CONTACT,
   CLEAR_CONTACTS,
-  FILTER_CONTACTS,
   CLEAR_FILTER,
-  CONTACT_ERROR
+  CONTACT_ERROR,
+  MEGH_FILTER
 } from '../types';
 
 export default (state, action) => {
@@ -67,7 +67,7 @@ export default (state, action) => {
         current: null
       };
 
-    case FILTER_CONTACTS:
+    case MEGH_FILTER:
       return {
         ...state,
         filtered: state.contacts.filter(contact => {

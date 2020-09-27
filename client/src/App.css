@@ -455,3 +455,11 @@ table th {
 .title {
   color: grey;
 }
+
+@media (max-width: 900px) {
+  .btn-responsive {
+    padding: 8px 8px;
+    font-size: 80%;
+    margin: 3px;
+  }
+}
