@@ -29,7 +29,7 @@ export const Register = props => {
 
   const { name, email, password, password2 } = user;
 
-  const onChange = e =>
+  const onChange = event =>
     setUser({ ...user, [event.target.name]: event.target.value });
 
   const onSubmit = e => {

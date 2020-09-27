@@ -27,7 +27,7 @@ const Login = props => {
 
   const { email, password } = user;
 
-  const onChange = e =>
+  const onChange = event =>
     setUser({ ...user, [event.target.name]: event.target.value });
 
   const onSubmit = e => {
