@@ -1,24 +1,34 @@
 import React from 'react';
 import image from '../../images/LooksNice.jpg';
+import nodejslogo from '../../images/nodejs.png';
+
 const About = () => {
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>About this WebApp</h1>
+      <h2 style={{ textAlign: 'center' }}>About this WebApp</h2>
       <div className='cardAbout'>
         <p>
-          <strong>Purpose:</strong> This is Contact-Keeper is a full stack React
-          App for keeping the contacts. It is powered by Node.js app at backend
-          and the database used is MonogoDB.
+          <strong>Contact-Keeper</strong> is a Full Stack App for storing
+          contacts and searching them based on name and email. This site uses
+          <a href='https://reactjs.org/'>
+            {' '}
+            <i class='fab fa-react'></i>
+          </a>{' '}
+          ReactJs at frontend and
+          <a href='https://nodejs.org/en/'>
+            <img src={nodejslogo} className='nodejslogo' target='_blank' />{' '}
+          </a>
+          at backend and the database used is MonogoDB.
         </p>
         <p>
-          <strong>Version:</strong> 1.0.0
-        </p>
-        <p>
+          <strong>Version:</strong> 1.0.0{'  '}
           <a
             href='https://github.com/meghrajfalle/contact-keeper'
             target='_blank'
           >
-            <u>Visit this Project's Github Repo</u>
+            <i class='fab fa-github' aria-hidden='true'></i>:
+            <u>Visit this Project's Github Repo </u>{' '}
+            <i class='fas fa-external-link-alt'></i>
           </a>
         </p>
       </div>
@@ -60,7 +70,7 @@ const About = () => {
               class='btn btn-dark btn-responsive'
               target='_blank'
             >
-              Connect with me at Linkedin
+              Connect with me at Linkedin <i class='fab fa-linkedin'></i>
             </a>
             <a
               href='https://github.com/meghrajfalle'
@@ -68,7 +78,8 @@ const About = () => {
               class='btn btn-dark btn-responsive'
               target='_blank'
             >
-              Visit Github Profile
+              Visit Github Profile{' '}
+              <i class='fab fa-github' aria-hidden='true'></i>
             </a>
             <a
               href=' https://www.facebook.com/meghraj.falle'
@@ -76,7 +87,7 @@ const About = () => {
               class='btn btn-dark btn-responsive'
               target='_blank'
             >
-              Visit Facebook Profile
+              Visit Facebook Profile <i class='fab fa-facebook'></i>
             </a>
             <a
               href=' https://twitter.com/meghraj_falle'
@@ -84,7 +95,7 @@ const About = () => {
               class='btn btn-dark btn-responsive'
               target='_blank'
             >
-              Follow me at Twitter
+              Follow me at Twitter <i class='fab fa-twitter'></i>
             </a>
           </p>
         </div>
@@ -95,12 +106,26 @@ const About = () => {
         <p>
           <a href='https://github-findermegh.netlify.app/' target='_blank'>
             <strong>
-              <u>Github Finder Project:</u>
+              Github Finder Project <i class='fas fa-external-link-alt'></i>
             </strong>{' '}
           </a>
-          In this site you can search for anybody's github profile and checkout
-          their repos and profile information. It fetches results from githubs
-          exposed APIs. Click on the title to visit the site.
+          : In this site you can search for anybody's github profile and
+          checkout their repos and profile information. It fetches results from
+          githubs exposed APIs. Click on the title to visit the site.{' '}
+          <i class='far fa-smile'></i>
+        </p>
+        <p>
+          <a href='https://projectmanagement-app.herokuapp.com' target='_blank'>
+            <strong>
+              Personal Project Management Tool{' '}
+              <i class='fas fa-external-link-alt'></i>
+            </strong>{' '}
+          </a>
+          : In this site you can create and manage your own projects and the
+          projects tasks inside it. Here you will have visibility of all the
+          projects and its tasks, their statuses(Todo, InProgress, Done) and
+          manage the deadlines and other details of your projects and its tasks.
+          Click on the title to visit the site. <i class='far fa-smile'></i>
         </p>
       </div>
     </div>

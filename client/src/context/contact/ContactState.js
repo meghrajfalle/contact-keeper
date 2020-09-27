@@ -9,7 +9,7 @@ import {
   CLEAR_CURRENT,
   UPDATE_CONTACT,
   CLEAR_CONTACTS,
-  FILTER_CONTA,
+  FILTER_CONTACTS,
   CLEAR_FILTER,
   CONTACT_ERROR
 } from '../types';
@@ -99,7 +99,7 @@ const ContactState = props => {
 
   //Filter Contacts
   const filterContacts = text => {
-    dispatch({ type: FILTER_CONTA, payload: text });
+    dispatch({ type: FILTER_CONTACTS, payload: text });
   };
 
   //Clear Filter

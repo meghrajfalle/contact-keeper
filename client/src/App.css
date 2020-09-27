@@ -463,3 +463,10 @@ table th {
     margin: 3px;
   }
 }
+
+.nodejslogo {
+  width: 61px;
+  margin: 2px 2px;
+  padding: 2px;
+  vertical-align: middle;
+}
