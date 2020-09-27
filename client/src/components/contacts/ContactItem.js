@@ -42,7 +42,14 @@ const ContactItem = ({ contact }) => {
         )}
         {phone && (
           <li>
-            <i className='fas fa-phone'></i> {phone}
+            <i className='fas fa-phone'></i>{' '}
+            {[
+              phone.slice(0, 3),
+              ' ',
+              phone.slice(3, 6),
+              ' ',
+              phone.slice(6)
+            ].join('')}
           </li>
         )}
       </ul>
