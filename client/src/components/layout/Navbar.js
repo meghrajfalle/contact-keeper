@@ -21,10 +21,10 @@ const Navbar = ({ title, icon }) => {
       {' '}
       <li>Hello {user && user.name} </li>
       <li>
-        <a onClick={onLogout} href='#!'>
+        <Link onClick={onLogout} to='/logout'>
           <i className='fas fa-sign-out-alt'></i>
           <span className='hide=sm'>Logout</span>
-        </a>
+        </Link>
       </li>
     </Fragment>
   );
@@ -38,7 +38,7 @@ const Navbar = ({ title, icon }) => {
         <Link to='/login'>Login</Link>
       </li>
       <li>
-        <Link to='/about'>About</Link>
+        <Link to='/about'>About us</Link>
       </li>
     </Fragment>
   );
@@ -60,7 +60,7 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
   title: 'Contact Keeper',
-  icon: 'fas fa-id-card-alt'
+  icon: 'fas fa-address-card'
 };
 
 export default Navbar;
