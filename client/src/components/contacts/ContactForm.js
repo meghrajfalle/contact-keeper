@@ -50,6 +50,7 @@ const ContactForm = () => {
         name='name'
         value={name}
         onChange={onChange}
+        required
       />
       <input
         type='email'
@@ -57,15 +58,22 @@ const ContactForm = () => {
         name='email'
         value={email}
         onChange={onChange}
+        required
       />
       <input
-        type='text'
+        type='tel'
         placeholder='Phone'
         name='phone'
+        placeholder='Phone'
+        pattern='[0-9]{3}[0-9]{3}[0-9]{4}'
         value={phone}
         onChange={onChange}
+        required
       />
-      <h5>Contact Type</h5>
+      <small>Format: 012-456-6789 (10 digits, without hyphen)</small>
+      <br></br>
+      <br></br>
+      <h4>Contact Type</h4>
       <input
         type='radio'
         name='type'
