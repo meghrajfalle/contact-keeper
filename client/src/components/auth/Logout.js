@@ -3,7 +3,7 @@ import AuthContext from '../../context/auth/authContext';
 
 const Logout = () => {
   const authContext = useContext(AuthContext);
-  const { logout, isAuthenticated } = authContext;
+  const { logout } = authContext;
 
   useEffect(() => {
     logout();
