@@ -115,7 +115,7 @@ const About = () => {
       <h2 style={{ textAlign: 'center' }}>My other small projects</h2>
       <div className='cardAbout'>
         <p>
-          <a href='#!' target='_blank' rel='noopener noreferrer'>
+          <a href='https://meghraj-portfolio.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
             <strong>
               My Porfolio Site <i class='fas fa-external-link-alt'></i>
             </strong>{' '}
