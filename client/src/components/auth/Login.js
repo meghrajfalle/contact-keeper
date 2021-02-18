@@ -9,10 +9,10 @@ const Login = () => {
   const { email, password } = user;
 
   const onChange = e =>
-    setUser({ ...user, [event.target.name]: [event.target.value] });
+    setUser({ ...user, [event.target.name]: event.target.value });
 
   const onSubmit = e => {
-    e.preventDefault;
+    e.preventDefault();
     console.log('User Logged in Succesfully');
   };
 
