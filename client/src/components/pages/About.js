@@ -16,7 +16,13 @@ const About = () => {
           </a>{' '}
           ReactJs at frontend and
           <a href='https://nodejs.org/en/'>
-            <img src={nodejslogo} className='nodejslogo' target='_blank' />{' '}
+            <img
+              src={nodejslogo}
+              alt='Profile pic'
+              className='nodejslogo'
+              target='_blank'
+              rel='noopener noreferrer'
+            />{' '}
           </a>
           at backend and the database used is MonogoDB.
         </p>
@@ -25,6 +31,7 @@ const About = () => {
           <a
             href='https://github.com/meghrajfalle/contact-keeper'
             target='_blank'
+            rel='noopener noreferrer'
           >
             <i class='fab fa-github' aria-hidden='true'></i>:
             <u>Visit this Project's Github Repo </u>{' '}
@@ -69,6 +76,7 @@ const About = () => {
               type='submit'
               class='btn btn-dark btn-responsive'
               target='_blank'
+              rel='noopener noreferrer'
             >
               Connect with me at Linkedin <i class='fab fa-linkedin'></i>
             </a>
@@ -77,6 +85,7 @@ const About = () => {
               type='submit'
               class='btn btn-dark btn-responsive'
               target='_blank'
+              rel='noopener noreferrer'
             >
               Visit Github Profile{' '}
               <i class='fab fa-github' aria-hidden='true'></i>
@@ -86,6 +95,7 @@ const About = () => {
               type='submit'
               class='btn btn-dark btn-responsive'
               target='_blank'
+              rel='noopener noreferrer'
             >
               Visit Facebook Profile <i class='fab fa-facebook'></i>
             </a>
@@ -94,6 +104,7 @@ const About = () => {
               type='submit'
               class='btn btn-dark btn-responsive'
               target='_blank'
+              rel='noopener noreferrer'
             >
               Follow me at Twitter <i class='fab fa-twitter'></i>
             </a>
@@ -104,7 +115,22 @@ const About = () => {
       <h2 style={{ textAlign: 'center' }}>My other small projects</h2>
       <div className='cardAbout'>
         <p>
-          <a href='https://github-findermegh.netlify.app/' target='_blank'>
+          <a href='https://meghraj-portfolio.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
+            <strong>
+              My Porfolio Site <i class='fas fa-external-link-alt'></i>
+            </strong>{' '}
+          </a>
+          : In this site you can find every details about me. My resume, my
+          projects, my professional accounts, my Social links to connect with
+          me. It's purely developed in ReactJs using react-mdl library. Click on
+          the title to visit the site. <i class='far fa-smile'></i>
+        </p>
+        <p>
+          <a
+            href='https://github-findermegh.netlify.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <strong>
               Github Finder Project <i class='fas fa-external-link-alt'></i>
             </strong>{' '}
@@ -115,7 +141,11 @@ const About = () => {
           <i class='far fa-smile'></i>
         </p>
         <p>
-          <a href='https://projectmanagement-app.herokuapp.com' target='_blank'>
+          <a
+            href='https://projectmanagement-app.herokuapp.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <strong>
               Personal Project Management Tool{' '}
               <i class='fas fa-external-link-alt'></i>

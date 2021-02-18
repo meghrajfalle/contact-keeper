@@ -9,6 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     authContext.loadUser(); // when we reload this page we want the user's data
+    // eslint-disable-next-line
   }, []);
 
   return (
